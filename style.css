@@ -1,0 +1,1146 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+#firstpage{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    
+}
+#nav{
+    height: 130px;
+    width: 100%;
+    position:  sticky;
+    top: 0px;
+    background-color: transparent;
+    
+    Backdrop-filter:blur(5px);
+    display: flex;  
+    padding-top: 50px;
+    gap: 300px;
+    font-family: GILROY;
+}
+#lnav{
+    display: flex;
+    padding-left: 150px;
+    font-size: 35px;
+    font-weight: bolder;
+    color: beige;
+    transition: cubic-bezier(0.19, 1, 0.22, 1)2s;
+}
+#lnav i{
+    padding-right: 15px;
+}
+#lnav:hover{
+    scale: 1.2;
+}
+
+#midnavlinks a{
+    text-decoration: none;
+    color: rgb(252, 249, 249);
+    /* padding-right: 100px; */
+    padding: 0px 10px;
+    padding-bottom: 10px;
+    
+    font-size: 25px;
+    font-weight: 800;
+    text-align: center;
+    transition: cubic-bezier(0.19, 1, 0.22, 1)5s;
+    
+}
+#midnavlinks a:nth-child(2){
+    margin-left: 250px;
+}
+#midnavlinks a:nth-child(3){
+    margin-left: 250px;
+}
+#midnavlinks a:hover{
+    border-bottom: 2px solid white;
+    transition: ease-in;
+}
+
+
+#nav button{
+    padding: 15px 30px;
+    background-image: linear-gradient( to  top right, rgb(238, 97, 219), rgb(235, 235, 21));
+    font-size: 17px;
+    border-radius: 15px;
+    font-weight: 700;
+    transition: cubic-bezier(0.19, 1, 0.22, 1)2s;
+
+}
+#nav button:hover{
+    scale: 1.2;
+}
+#landingpage{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    
+}
+
+#pleft{
+    height: 100%;
+    width: 55%;
+    
+    
+}
+#pleft h1{
+    text-transform: uppercase;
+    color: azure;
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+    padding-top: 150px;
+    margin-left: -20px;
+    line-height: 1.5em;
+    font-size: 4.7em;
+    animation-name: words;
+    animation-duration: 5s;   
+    letter-spacing: 10px;
+}
+#btmtext h2{
+    margin-top: 30px;
+    margin-left: 400px;
+    color: aliceblue;
+    font-family: gilroy;
+}
+#pleft h1 span{
+    
+    background: linear-gradient(to top, #c47dc4, #b37ab3,#e4dfdb, #5bb2cc,#5bb2cc);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+#pleft p{
+    color: aliceblue;
+    width: 650px;
+    text-align: center;
+    font-family: gilroy;
+    
+    margin-left:260px;
+    padding-top: 50px;
+    font-size: 25px;
+    opacity: 60%;
+    
+}
+#pleft button{
+    padding: 15px 30px;
+    background-image: linear-gradient( to  top right, rgb(238, 97, 219), rgb(235, 235, 21));
+    font-size: 17px;
+    border-radius: 15px;
+    font-weight: 700;
+    margin-top: 70px;
+    margin-left: 500px;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 3s;
+
+}
+#pleft a{
+    text-decoration: none;
+}
+#pleft button:hover{
+    scale:1.2;
+}
+#pright {
+    height: 110%;
+    margin-top: -130px;
+    width: 45%;
+    /* background-color: #b37ab3; */
+    display: flex;
+    padding-left: 30px;
+    /* overflow: auto; */
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+}
+#clm1{
+    
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #b37ab3; */
+    gap:30px;
+    margin-left: -15px;
+    padding: 0px 15px;
+    animation-name: scroll;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-fill-mode:forwards;
+    animation-timing-function: linear;
+
+    
+}
+#clm2{
+    
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #b37ab3; */
+    gap:30px;
+    padding: 0px 15px;
+    animation-name: scroll;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-fill-mode:forwards;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+    
+}
+#clm3{
+    
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #b37ab3; */
+    padding: 0px 15px;
+    gap:30px;
+    
+    animation-name: scroll;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-fill-mode:forwards;
+    animation-timing-function: linear;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+.avtar3{
+    padding: 0px 10px;
+    border: 1px solid rgb(155, 151, 151);
+    border-radius: 30px;
+}
+@keyframes scroll {
+    0%{
+        margin-top: 0%;
+    }
+    
+    
+    100%{
+        margin-top: -500%;
+    }
+}
+@keyframes words {
+    0%{
+        opacity: 0%;
+    }
+    25%{
+        opacity: 25%;
+    }
+    50%{
+        opacity: 50%;
+        scale: 0.7;
+    }
+    75%{
+        opacity: 75%;
+    }
+    100%{
+        opacity: 100%;
+        scale: 1;
+    }
+}
+
+#sidescrollbar{
+    
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient( to  right, #F462AC,#E5907C, #B2C39C);   
+    margin-top: 10px;
+    
+}
+#scrollcontent{
+    display: flex;
+    
+}
+#leftscroll{
+    display: flex;
+    text-transform: uppercase;
+    font-size: 8px;
+    font-family: 'Press Start 2P', cursive;
+    gap: 10px;
+    padding-top: 40px;
+    padding-left: 35px;
+    text-align: center;
+    animation-name: sidescroll-l;
+    animation-duration: 25s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode:backwards;
+    
+    
+}
+#rightscroll{
+    display: flex;
+    text-transform: uppercase;
+    font-size: 8px;
+    font-family: 'Press Start 2P', cursive;
+    gap: 10px;
+    padding-top: 40px;
+    padding-left: 35px;
+    margin-left: 15%;
+    text-align: center;
+    animation-name: sidescroll-r;
+    animation-duration: 5s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode:backwards;
+
+    
+}
+#rightscroll h1{
+    display: flex;
+    width: 200px;
+    word-spacing: -10px;
+}
+#leftscroll h1{
+    display: flex;
+    width: 230px;word-spacing: -10px;
+    
+}
+
+#scrollcontent i{
+    padding-right: 15px;
+    font-size: 25px;
+    padding-bottom: 5px;
+
+}
+
+#svg{
+    display: flex;
+    padding-top: 30px;
+    animation-name: sidescroll-r;
+    animation-duration: 10s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode:forwards;
+
+}
+
+@keyframes sidescroll-r {
+    0%{
+        margin-left: 0%;
+    }
+    100%{
+        margin-left: -25%;
+    }
+}
+#page2{
+    
+    width:100% ;
+    
+}
+
+#headline{
+    display: flex;
+    color: aliceblue;
+    padding-top: 250px;
+    
+   
+}
+#headline h1{
+    font-family: 'Seymour One', sans-serif;
+    text-align: center;
+    font-size: 60px;
+    margin-left: 200px;
+    word-spacing: 20px;
+    
+}
+#headline p{
+    width: 650px;
+    text-align: center;
+    font-size:25px;
+    padding-top: 30px;
+    margin-left: 600px;
+    font-family: gilroy;
+    
+}
+
+
+#headline h1 span{
+    background: linear-gradient(to top, #c47dc4, #b37ab3,#e4dfdb, #5bb2cc,#5bb2cc);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#illustrations{
+    display: flex;
+    margin-top: 150px;
+    margin-left: 350px;
+    gap: 200px;
+    padding-bottom: 200px;
+}
+
+#img1 h1{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: 'Press Start 2P', cursive;
+}
+#img1 p{
+    color: #B2C39C;
+    width: 450px;
+    text-align: center;
+    margin-left: 0px;
+    font-size: 25px;
+    font-family: gilroy;
+}
+#img2 h1{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: 'Press Start 2P', cursive;
+}
+#img2 p{
+    color: #B2C39C;
+    width: 450px;
+    text-align: center;
+    margin-left: 0px;
+    font-size: 25px;
+    font-family: gilroy;
+}
+#img3 h1{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: 'Press Start 2P', cursive;
+}
+#img3 p{
+    color: #B2C39C;
+    width: 450px;
+    text-align: center;
+    margin-left: 0px;
+    font-size: 25px;
+    font-family: gilroy;
+}
+
+#page3{
+    
+    width: 100%;
+   
+    
+}
+#page3 h1{
+    font-size: 90px;
+    color: aliceblue;
+    font-family: 'Seymour One', sans-serif;
+    letter-spacing: 5px;
+    word-spacing: 35px;
+    margin-top: 50px;
+    margin-left: 250px;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 5s;
+}
+#page3 h1:hover{
+    background: linear-gradient(to top, #c47dc4, #b37ab3,#e4dfdb, #5bb2cc,#5bb2cc);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    transition: ease-in;
+    cursor: none;
+}
+#page3-content{
+  display: flex;
+}
+#pleft-p3{
+  width: 50%;
+  height: 100%;
+}
+#pright-p3{
+  width: 50%;
+  height: 100%;
+  padding-bottom: 100px;
+}
+#pright-p3{
+  display: flex;
+  flex-direction: column;
+  gap: 130px;
+  padding-top: 150px;
+  
+  color: #e4dfdb;
+}
+#pright-p3 h2{
+  font-size: 60px;
+  opacity: 50%;
+  font-family: gilroy;
+
+}
+#pright-p3 p{
+  font-size: 25px;
+  margin-top: 20px;
+  width: 700px;
+  opacity: 50%;
+  
+
+}
+#pright-p3 p:hover{
+  opacity: 90%;
+}
+#pright-p3 h2:hover{
+  opacity: 100%;
+}
+
+
+.cube-container {
+  height: 400px;
+  width: 400px;
+  perspective: 1000px;
+ 
+  margin-top: 650px;
+  margin-left: 250px;
+}
+.cube {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  backface-visibility: visible;
+  width: 100%;
+  
+}
+.cube figure {
+  height: 300px;
+  margin: 0;
+  position: absolute;
+  width: 300px;
+}
+.cube-large figure {
+  outline: 1px solid rgba(178, 215, 228, 0.15);
+  background: rgba(102, 175, 202, 0.15);
+}
+.cube-small {
+  z-index: -1;
+}
+.cube-small figure {
+  outline: 1px solid rgba(152, 207, 237, 0.5);
+  background: rgba(66, 166, 221, 0.5);
+}
+.front {
+  transform: translateZ(150px);
+}
+.back {
+  transform: rotateY(180deg) rotateX(0deg) translateZ(150px);
+}
+.left {
+  transform: rotateY(-90deg) translateZ(150px);
+}
+.right {
+  transform: rotateY(90deg) translateZ(150px);
+}
+.top {
+  transform: rotateY(90deg) translateZ(150px);
+}
+.bottom {
+  transform: rotateX(-90deg) rotateZ(-180deg) translateZ(150px);
+}
+.cube-large {
+  animation: large-cube-spin 5000ms infinite linear;
+}
+.cube-small {
+  animation: small-cube-spin 5000ms infinite reverse linear;
+}
+@keyframes large-cube-spin {
+  from {
+    transform: rotateY(0);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+@keyframes small-cube-spin {
+  from {
+    transform: scale(0.5) rotateY(0);
+  }
+  to {
+    transform: scale(0.5) rotateY(-360deg);
+  }
+}
+
+
+#page4{
+  
+  width: 100%;
+  background-color: black;
+  color: azure;
+}
+
+.marquee {
+    position: relative;
+   
+    max-width: 100%;
+    height: 200px;
+    overflow-x: hidden;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 250px;
+  }
+  .content{
+    font-size: 80px;
+    font-family: gilroy;
+    font-weight: bolder;
+    padding: 30px 250px;
+    
+     ;
+  }
+  
+  .track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 15s linear infinite;
+  }
+  
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  #p4div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+  }
+  #p4left{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+  }
+  #p4left img{
+    padding-top: 250px;
+    height: 900px;
+  }
+  #p4right{
+    width: 50%;
+    height: 100%;
+    
+  }
+  #p4right #links{
+    display: flex;
+    flex-direction: column;
+    padding-top: 350px;
+    line-height: 30px;
+    font-size: 30px;
+    font-family: gilroy;
+    padding-left: 30px;
+  }
+  #p4right #links h3{
+    padding-bottom: 50px;
+    text-align: center;
+    margin-left: -150px;
+  }
+  #p4right #links a{
+    padding-bottom: 15px;
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  #p4right #links a:hover{
+    color: #F462AC;
+  }
+  
+  #p4right #links i{
+    padding-right: 25px;
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  #p4right #links a:nth-child(2){
+    color: #F462AC;
+  }
+  #p4right #links i:nth-child(2){
+    color: #F462AC;
+  }
+
+  #p4btm-r{
+    height: 500px;
+    width: 1000px;
+   
+    margin-top: 150px;
+  }
+  #head{
+    display: flex;
+  }
+  #avtar{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    background-image: url(https://img.freepik.com/premium-photo/3d-cartoon-character-fun-teenager_183364-90822.jpg?w=360);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+  }
+  #username{
+    padding-top: 50px;
+    padding-left: 30px;
+  }
+  #username p{
+    opacity: 60%;
+    padding-left: 35px;
+    padding-top: 10px;
+  }
+  #username h1{
+    
+    font-family: gilroy;
+  }
+  #username p{
+    font-size: 20px;
+    font-family: gilroy;
+  }
+  #xyz{
+    width: 600px;
+    font-size: 25px;
+    padding-left: 20px;
+    padding-top: 40px;
+  }
+
+ #page5{
+    
+    width: 100%;
+    display: flex;
+    
+    
+ }
+ #page5 #pleft{
+  width: 60%;
+  height: 100%;
+ }
+ #heading5 h2{
+    
+    font-size: 45px;
+    color: aliceblue;
+    font-family: 'Seymour One', sans-serif;
+    
+    word-spacing: 10px;
+    margin-top: 150px;
+    margin-left: 80px;
+    
+    
+ }
+
+ #heading5 h2 span{
+    background: linear-gradient(to bottom, #c47dc4, #b37ab3,#e4dfdb, #5bb2cc,#5bb2cc);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 60px;
+    cursor: none;
+ }
+ #content-p5{
+  margin-top: 200px;
+  font-family: gilroy;
+  margin-left: 190px;
+  
+ }
+
+ #content-p5 h3{
+    color: aliceblue;
+    margin-left: 80px;
+    margin-top: 80px;
+    font-size: 50px;
+    line-height: 100px;
+    
+ }
+ #content-p5 #a1{
+    opacity: 50%;
+ }
+ #content-p5 #a1:hover{
+  opacity: 100%;
+ }
+ #content-p5 #a2{
+    opacity: 50%;
+ }
+ #content-p5 #a2:hover{
+  opacity: 100%;
+ }
+ #content-p5 #a3{
+    opacity: 50%;
+ }
+ #content-p5 #a3:hover{
+  opacity: 100%;
+ }
+ #content-p5 h4{
+    color: aliceblue;
+    margin-left: 80px;
+    font-size: 30px;
+    width: 800px;
+    opacity: 80%;
+    
+ }
+ #content-p5 i{
+  margin-left: -70px;
+  padding-right: 25px;
+ }
+
+ #page5 #pright{
+  width: 40%;
+  
+ }
+
+ #page5 #vid{
+  padding-top: 400px;
+  
+ }
+ #button5{
+  margin-left: -450px;
+ }
+ #page6{
+  width: 100%;
+  cursor: pointer;
+ }
+ #page6 h1{
+    color: aliceblue;
+    font-family: gilroy;
+    font-size: 440px;
+    text-align: center;
+    margin-top: 100px;
+    opacity: 13%;
+    z-index: -1;
+ }
+ #page6 p{
+    color: aliceblue;
+    font-family: gilroy;
+    font-size: 40px;
+    width: 800px;
+    margin-top: -340px;
+    margin-left: 1400px;
+ }
+ #page6 a button{
+  font-size: 30px;
+  margin-left: 1400px;
+  margin-top: 50px;
+  background-color: transparent;
+  font-family: gilroy;
+  color:#F959AE;
+ }
+ #page6 a button i{
+    padding-right: 20px;
+ }
+
+ #page7{
+    width: 100%;
+    
+    
+ }
+ #scrollbar-p7{
+  margin-top: 150px;
+  display: flex;
+  animation-name: scroller7 ;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  
+ }
+
+ #scroller-l{
+    display: flex;
+    
+    margin-right: 80px;
+    margin-top: 150px;
+    
+    
+ }
+ 
+ #scroller-r{
+    display: flex;
+    
+    margin-right: 80px;
+    margin-top: 150px;
+    margin-left: -55px;
+   
+ }
+ @keyframes scroller7 {
+    0%{
+      margin-left: 0%;
+    }
+    100%{
+      margin-left: -80%;
+    }
+ }
+ 
+#content7{
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 300px;
+  font-family: gilroy;
+  text-align: center;
+}
+
+#line{
+    display: flex;
+    margin-left: 750px;
+    margin-right: 750px;
+    justify-content:space-between;
+    padding: 20px 30px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+#line i{
+   font-size: 50px;
+   border-left: 2px solid white;
+   padding-left: 20px;
+}
+#content7 p{
+   font-size: 20px;
+   
+}
+#content7 p span{
+   font-size: 25px;
+   padding-left: 30px;
+
+}
+#content7 a{
+  color: #C04587;
+
+}
+#page8{
+  width: 100%;
+  text-align: center;
+  
+}
+#page8 h1{
+  font-size: 150px;
+  color: aliceblue;
+  margin-top: 300px;
+  font-family: gilroy;
+  
+}
+#numbering{
+  display: flex;
+  justify-content: center;
+  margin-top: -150px;
+  gap: 10px;
+}
+#no1{
+  display: flex;
+  flex-direction: column;
+}
+#no1 h1{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 75px;
+  
+}
+#no1 p{
+  font-family: gilroy;
+  font-size: 35px;
+  color: aliceblue;
+  margin-top: 20px;
+  width: 300px;
+}
+#lineno{
+  height: 5px;
+  width: 200px;
+  background-color: aliceblue;
+  margin-top: 350px;
+}
+#btn8{
+  margin-top: 300px;
+}
+#btn8 button{
+  padding: 50px 85px;
+  font-size: 65px;
+  border-radius: 20px;
+  font-family: 'Press Start 2P', cursive;
+  background-image: linear-gradient( to  top right, rgb(238, 97, 219), rgb(235, 235, 21));
+}
+#btn8 button a{
+  text-decoration: none;
+  color: black;
+}
+#page9{
+  width: 100%;
+  
+  
+}
+#box9 {
+  margin-top: 250px;
+  height: 150px;
+  opacity: 50%;
+  overflow: hidden;
+}
+#lines9{
+  
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  animation-name: movinglines;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  z-index: -1 ;
+  
+}
+#line1{
+   height: 2px;
+   width: 100%;
+   background-color: #A76C54;
+}
+@keyframes movinglines {
+  0%{
+    margin-top: 0%;
+  }
+  100%{
+    margin-top: -50%;
+  }
+  
+}
+
+#vlines{
+  display: flex;
+  gap: 200px;
+  margin-top: -150px;
+  margin-left: 50px;
+  opacity: 40%;
+}
+#vline1{
+  height: 140px;
+  width: 3px;
+  background-color: #A76C54;
+  transform: translate(-50%,-50%);
+  transform: rotate(-10deg);
+}
+
+#page10{
+  width: 100%;
+  display: flex;
+  height: 100%;
+}
+#pleft10{
+  width: 40%;;
+}
+#pleft10 h6{
+  font-size: 60px;
+  color: aliceblue;
+  font-family: gilroy;
+  font-weight: 900;
+  margin-top: 190px;
+  margin-left: 100px;
+}
+#email{
+  margin-left:100px ;
+  margin-top: 30px;display: flex;
+ 
+}
+#email{
+  margin-left:100px ;
+  margin-top: 30px;
+ 
+}
+#email button{
+  height: 80px;
+  width: 80px;
+  font-size: 30px;
+  font-family: gilroy;
+  font-weight: 900;
+  background-image: linear-gradient( to  top right, rgb(238, 97, 219), rgb(235, 235, 21));
+  border-radius: 10px;
+  margin-left: -80px;
+}
+#pleft10 #lnav{
+  margin-top: 450px;
+  font-size: 70px;
+  
+}
+
+
+#pright10{
+  width: 60%;
+  
+}
+#mid10{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 200px;
+  margin-left: 150px;
+}
+#rlinks{
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 70px;
+  
+  
+}
+#rlinks a{
+  text-decoration: none;
+  color: aliceblue;
+}
+#rsocials-u{
+  display: flex;
+  gap: 30px;
+}
+#rsocials-l{
+  display: flex;
+  gap: 30px;
+}
+#boxes10{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#box10{
+  height: 100px;
+  width: 100px;
+  border:2px solid rgba(255, 255, 255, 0.384);
+  border-radius: 10px;
+  text-align: center;
+}
+#box10:hover{
+  border:2px solid rgb(255, 255, 255);
+}
+#box10 i{ 
+ color: aliceblue;
+ font-size: 55px;
+ padding: 20px 0px;
+}
+#box10 i:hover{ 
+ color: #F061A5;
+ font-size: 55px;
+ padding: 20px 0px;
+}
+#pbtm{
+  
+  margin-top: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+#btm3{
+  display: flex;
+  gap: 50px;
+  font-size: 20PX;
+  font-family: gilroy;
+  color: #e4dfdb;
+  
+  margin-left: -150PX;
+}
+#btmr{
+  font-size: 30px;
+  color: aliceblue;
+  text-align: center;
+  font-family: GILROY;
+  line-height: 60px;
+  margin-top: -80px;
+}
+#btmr span{
+  font-size: 45px;
+  
+}
